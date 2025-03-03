@@ -64,35 +64,4 @@ right:50px;
 
 }
 
-/* Default Light Mode */
-body {
-  background-color: white;
-  color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Dark Mode */
-.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-/* Navbar Dark Mode */
-.dark-theme .navbar {
-  background-color: #222 !important;
-}
-
-/* Footer Dark Mode */
-.dark-theme footer .navbar {
-  background-color: #222 !important;
-}
-
-/* Button Styling */
-button {
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  font-size: 16px;
-}
 

@@ -11,8 +11,7 @@ function HomePage() {
                             "Hello! My name is Arnav Katyayan",
                             "Welcome To my Visual-Resume",
                             "I am Passionate About Software Development",
-                            "Code. Create. Innovate. Repeat.",
-                            "Let's Build Something Amazing!"
+                            "I hope you will like my work" 
                         ],
                         autoStart: true,
                         loop: true, // Enables looping effect

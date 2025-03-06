@@ -98,5 +98,11 @@ body {
   display: flex;
   gap:5px;
 }
+.my-name {
+  text-align: center;
+  position: relative;
+  left:23vw;
+  font-weight: 700;
+}
 
 

@@ -36,8 +36,9 @@ function App() {
                 {darkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
                 <ReactSwitch onChange={toggleDarkMode} checked={darkMode}/>
               </div>
-              
-             
+
+            
+              <h1 className="my-name">Arnav Katyayan</h1>
             </Nav>
             <Nav className="me-auto margin-left-nav">
             

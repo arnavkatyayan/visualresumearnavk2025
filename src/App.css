@@ -103,6 +103,27 @@ body {
   position: relative;
   left:23vw;
   font-weight: 700;
+  font-family: monospace;
+}
+.contact-page {
+ top:10vw;
+}
+.form-contact-page {
+     border: 1px solid black;
+     width: 25vw;
+     height: 43vh;
+     padding: 15px;
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+     border-radius: 8px;
+}
+.form-contact-page-light-mode {
+  border:1px solid white;
+}
+.btn-grps {
+  display: flex;
+  gap:25px;
+  padding: 25px;
+  justify-content: center;
 }
 
 

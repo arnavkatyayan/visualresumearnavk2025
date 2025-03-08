@@ -8,12 +8,19 @@ import { useState, useEffect } from 'react';
 import { Switch, FormControlLabel } from "@mui/material";
 import ReactSwitch from 'react-switch';
 import { dark } from '@mui/material/styles/createPalette';
+import ContactPage from './ContactPage';
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
+  const [contactPageClicked, setContactPageClicked] = useState(false);
+  
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
+
+  const handleContactPage = () => {
+    setContactPageClicked(!contactPageClicked);
+  }
 
   useEffect(() => {
     if (darkMode) {
@@ -44,13 +51,16 @@ function App() {
             
               <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">Data Structures & Algo</Nav.Link>
               <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">Projects</Nav.Link>
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">Contact</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={handleContactPage}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
-      <HomePage />
+    {contactPageClicked ? 
+    <ContactPage darkMode={darkMode}/>:null}
+    {!contactPageClicked ?
+      <HomePage /> : null}
 
       <footer>
         <Navbar bg={darkMode ? "dark" : "light"} variant={darkMode ? "dark" : "light"} fixed="bottom">

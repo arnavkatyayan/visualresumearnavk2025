@@ -9,17 +9,26 @@ import { Switch, FormControlLabel } from "@mui/material";
 import ReactSwitch from 'react-switch';
 import { dark } from '@mui/material/styles/createPalette';
 import ContactPage from './ContactPage';
-
+import AboutPage from './AboutPage';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [contactPageClicked, setContactPageClicked] = useState(false);
-  
+  const [homePageClicked, setHomePageClicked] = useState(false);
+  const [aboutPageClicked, setAboutPageClicked] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
 
   const handleContactPage = () => {
     setContactPageClicked(!contactPageClicked);
+  }
+
+  const handleHomePage = () => {
+    setHomePageClicked(!homePageClicked);
+  }
+
+  const handleAboutPage = () => {
+    setAboutPageClicked(!aboutPageClicked);
   }
 
   useEffect(() => {
@@ -37,8 +46,8 @@ function App() {
         <Container>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto margin-right-nav">
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"}>Home</Nav.Link>
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">About</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={handleHomePage}>Home</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#" onClick={handleAboutPage}>About</Nav.Link>
               <div className="dark-mode-btn">
                 {darkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
                 <ReactSwitch onChange={toggleDarkMode} checked={darkMode}/>
@@ -57,17 +66,26 @@ function App() {
         </Container>
       </Navbar>
 
-    {contactPageClicked ? 
+    {contactPageClicked ?
     <ContactPage darkMode={darkMode}/>:null}
-    {!contactPageClicked ?
+    {aboutPageClicked ?
+    <AboutPage darkMode={darkMode}/>:null}
+    {!homePageClicked ?
       <HomePage /> : null}
 
       <footer>
         <Navbar bg={darkMode ? "dark" : "light"} variant={darkMode ? "dark" : "light"} fixed="bottom">
           <Container className="justify-content-center">
-            <Nav>
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"}>Version 1.0.0</Nav.Link>
-            </Nav>
+            <Nav className='footer-version'>
+              <div className="footer-content">
+                <span>📧 <a href="mailto:arnavkatyayan99@gmail.com">Email</a></span> |
+                <span>🔗 <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></span> |
+                <span>📞 +91 8851454409</span> |
+                <span>🐱 <a href="https://github.com/yourgithub" target="_blank">GitHub</a></span> |
+                <span>⚡ <a href="https://leetcode.com/yourprofile" target="_blank">LeetCode</a></span> |
+              </div>
+                <p className='text-align-center'>© 2025 Arnav Katyayan. All rights reserved.</p>
+           </Nav>
           </Container>
         </Navbar>
       </footer>

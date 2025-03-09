@@ -125,5 +125,14 @@ body {
   padding: 25px;
   justify-content: center;
 }
+.footer-version {
+  display: flex !important;
+  flex-direction: column !important;
+  gap:1px;
+}
+.text-align-center {
+  text-align: center;
+  font-weight: 500;
+}
 
 

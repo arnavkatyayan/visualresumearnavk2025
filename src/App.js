@@ -5,31 +5,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import HomePage from './HomePage';
 import { useState, useEffect } from 'react';
-import { Switch, FormControlLabel } from "@mui/material";
 import ReactSwitch from 'react-switch';
-import { dark } from '@mui/material/styles/createPalette';
 import ContactPage from './ContactPage';
 import AboutPage from './AboutPage';
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [contactPageClicked, setContactPageClicked] = useState(false);
-  const [homePageClicked, setHomePageClicked] = useState(false);
-  const [aboutPageClicked, setAboutPageClicked] = useState(false);
+  const [currentPage, setCurrentPage] = useState("home"); // Tracks current active page
+
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
 
-  const handleContactPage = () => {
-    setContactPageClicked(!contactPageClicked);
-  }
-
-  const handleHomePage = () => {
-    setHomePageClicked(!homePageClicked);
-  }
-
-  const handleAboutPage = () => {
-    setAboutPageClicked(!aboutPageClicked);
-  }
+  const handleNavigation = (page) => {
+    setCurrentPage(page); // Update the state to show only the selected page
+  };
 
   useEffect(() => {
     if (darkMode) {
@@ -42,50 +32,47 @@ function App() {
   return (
     <div className={darkMode ? "dark-theme" : "light-theme"}>
       
+      {/* Navbar */}
       <Navbar bg={darkMode ? "dark" : "light"} expand="lg" className='nav-bg'>
         <Container>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto margin-right-nav">
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={handleHomePage}>Home</Nav.Link>
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#" onClick={handleAboutPage}>About</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={() => handleNavigation("home")}>Home</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={() => handleNavigation("about")}>About</Nav.Link>
               <div className="dark-mode-btn">
                 {darkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
                 <ReactSwitch onChange={toggleDarkMode} checked={darkMode}/>
               </div>
-
-            
               <h1 className="my-name">Arnav Katyayan</h1>
             </Nav>
             <Nav className="me-auto margin-left-nav">
-            
               <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">Data Structures & Algo</Nav.Link>
               <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">Projects</Nav.Link>
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={handleContactPage}>Contact</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={() => handleNavigation("contact")}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
-    {contactPageClicked ?
-    <ContactPage darkMode={darkMode}/>:null}
-    {aboutPageClicked ?
-    <AboutPage darkMode={darkMode}/>:null}
-    {!homePageClicked ?
-      <HomePage /> : null}
+      {/* Conditional Rendering Based on Current Page */}
+      {currentPage === "home" && <HomePage />}
+      {currentPage === "about" && <AboutPage darkMode={darkMode} />}
+      {currentPage === "contact" && <ContactPage darkMode={darkMode} />}
 
+      {/* Footer */}
       <footer>
         <Navbar bg={darkMode ? "dark" : "light"} variant={darkMode ? "dark" : "light"} fixed="bottom">
           <Container className="justify-content-center">
             <Nav className='footer-version'>
               <div className="footer-content">
                 <span>📧 <a href="mailto:arnavkatyayan99@gmail.com">Email</a></span> |
-                <span>🔗 <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></span> |
+                <span>🔗 <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></span> |
                 <span>📞 +91 8851454409</span> |
-                <span>🐱 <a href="https://github.com/yourgithub" target="_blank">GitHub</a></span> |
-                <span>⚡ <a href="https://leetcode.com/yourprofile" target="_blank">LeetCode</a></span> |
+                <span>🐱 <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">GitHub</a></span> |
+                <span>⚡ <a href="https://leetcode.com/yourprofile" target="_blank" rel="noopener noreferrer">LeetCode</a></span> |
               </div>
-                <p className='text-align-center'>© 2025 Arnav Katyayan. All rights reserved.</p>
-           </Nav>
+              <p className='text-align-center'>© 2025 Arnav Katyayan. All rights reserved.</p>
+            </Nav>
           </Container>
         </Navbar>
       </footer>

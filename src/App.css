@@ -134,5 +134,105 @@ body {
   text-align: center;
   font-weight: 500;
 }
+.my-picture {
+  height: 36vh;
+  width: 13vw;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 2vw;
+  gap: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Slide-in effect for experience section */
+.picture-experience {
+  display: flex;
+  gap: 17px;
+  transform: translateX(-50px);
+  opacity: 0;
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+/* Experience section styling */
+.my-experience {
+  width: 32vw;
+  height: 69vh;
+  border: 1px solid black;
+  padding: 13px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Slide-in effect for skills section */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  transform: translateX(50px);
+  opacity: 0;
+  animation: slideInRight 1s ease-in-out forwards;
+}
+
+/* Hover effect on skill boxes */
+.skills-each {
+  border: 1px solid black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  height: 25vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skills-each:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode border color */
+.skills-each-dark-mode {
+  border: 1px solid rgb(231, 221, 212) !important;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 

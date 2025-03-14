@@ -234,5 +234,80 @@ body {
     transform: translateX(0);
   }
 }
+.projects-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:45px;
+}
+.projects {
+  height: 80vh;
+  width: 25vw;
+  border: 1px solid black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+  position:relative;
+  top:1vw;
+  padding: 5px;
+}
+.project-names {
+  text-align: center;
+  text-decoration: underline;
+}
+.project-description {
+  padding: 15px;
+  font-weight: 600;
+}
+.logo-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+}
+.flexboard-logo {
+  width:30px;
+  margin-top: -4px;
+}
+.expensify-logo {
+  width: 37px;
+  margin-top: 2px;
+}
+.project-features {
+  margin-top: -20px;
+  margin-left: -10px;
+}
+.github {
+  bottom: -22px;
+  position: relative;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
 
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.fade-down {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInDown 1.5s ease-out forwards;
+}
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 

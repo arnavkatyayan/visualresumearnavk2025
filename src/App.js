@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import ReactSwitch from 'react-switch';
 import ContactPage from './ContactPage';
 import AboutPage from './AboutPage';
+import ProjectsPage from './ProjectsPage';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -46,8 +47,8 @@ function App() {
               <h1 className="my-name">Arnav Katyayan</h1>
             </Nav>
             <Nav className="me-auto margin-left-nav">
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">Data Structures & Algo</Nav.Link>
-              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} href="#">Projects</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={() => handleNavigation("DSA")}>Data Structures & Algo</Nav.Link>
+              <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={() => handleNavigation("project")}>Projects</Nav.Link>
               <Nav.Link className={darkMode ? "dark-theme" : "light-theme"} onClick={() => handleNavigation("contact")}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -57,7 +58,8 @@ function App() {
       {/* Conditional Rendering Based on Current Page */}
       {currentPage === "home" && <HomePage />}
       {currentPage === "about" && <AboutPage darkMode={darkMode} />}
-      {currentPage === "contact" && <ContactPage darkMode={darkMode} />}
+      {currentPage === "project" && <ProjectsPage darkMode={darkMode} />}
+      {currentPage === "DSA" && <ContactPage darkMode={darkMode} />}
 
       {/* Footer */}
       <footer>

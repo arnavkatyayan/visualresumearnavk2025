@@ -147,10 +147,11 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: 2vw;
-  gap: 10px;
+  top: -2vw;
+  gap: 40px;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
+  height:150vh;
 }
 
 /* Slide-in effect for experience section */
@@ -387,4 +388,31 @@ body {
 .swal-button {
   margin-right: 180px;
   background-color: limegreen;
+}
+.dsa-icons {
+  height: 8vh;
+  width: 3vw;
+  padding: 9px;
+}
+.dsa-icons-label {
+  display: flex;
+}
+.dsa-labels {
+  margin-block:auto;
+  text-decoration: underline;
+}
+.dsa-box-animation {
+  opacity: 0;
+  animation: dsaContent 1.5s ease-in-out 1s forwards;
+}
+@keyframes dsaContent {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity:1;
+  }
 }

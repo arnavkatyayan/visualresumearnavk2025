@@ -9,17 +9,24 @@ import ReactSwitch from 'react-switch';
 import ContactPage from './ContactPage';
 import AboutPage from './AboutPage';
 import ProjectsPage from './ProjectsPage';
-
+import DsAlgoPage from './DsAlgoPage';
+import swal from 'sweetalert';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [currentPage, setCurrentPage] = useState("home"); // Tracks current active page
-
+  const [prevPage, setPrevPage] = useState("");
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
   };
 
   const handleNavigation = (page) => {
-    setCurrentPage(page); // Update the state to show only the selected page
+    if (page === currentPage) {
+      swal("Error", "We are on the same page", "error");
+      return;
+    }
+    
+    setPrevPage(currentPage); 
+    setCurrentPage(page);
   };
 
   useEffect(() => {
@@ -59,7 +66,8 @@ function App() {
       {currentPage === "home" && <HomePage />}
       {currentPage === "about" && <AboutPage darkMode={darkMode} />}
       {currentPage === "project" && <ProjectsPage darkMode={darkMode} />}
-      {currentPage === "DSA" && <ContactPage darkMode={darkMode} />}
+      {currentPage === "contact" && <ContactPage darkMode={darkMode} />}
+      {currentPage === "DSA" && <DsAlgoPage darkMode={darkMode} />}
 
       {/* Footer */}
       <footer>

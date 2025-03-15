@@ -402,6 +402,7 @@ body {
   text-decoration: underline;
 }
 .dsa-box-animation {
+ /* vercel-deployement */
   opacity: 0;
   animation: dsaContent 1.5s ease-in-out 1s forwards;
 }
@@ -416,3 +417,4 @@ body {
     opacity:1;
   }
 }
+

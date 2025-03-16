@@ -5,7 +5,7 @@ function AboutPage(props) {
     const skills = [
         {
             category: "Programming Languages",
-            technologies: ["C++", "Java", "JavaScript", "Python", "Data Structures"]
+            technologies: ["C++", "Java", "JavaScript", "Python", "Data Structures & Algorithms"]
         },
         {
             category: "Frontend Development",

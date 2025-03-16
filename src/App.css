@@ -396,13 +396,14 @@ body {
 }
 .dsa-icons-label {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dsa-labels {
   margin-block:auto;
   text-decoration: underline;
 }
 .dsa-box-animation {
- /* vercel-deployement */
   opacity: 0;
   animation: dsaContent 1.5s ease-in-out 1s forwards;
 }
@@ -416,5 +417,29 @@ body {
   100% {
     opacity:1;
   }
+}
+.leetcode-badges {
+  height: 15vh;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-left: 7px;
+}
+.leetcode-badges-questions {
+  display: flex;
+  gap:5px;
+  justify-content: center;
+}
+.gfg-image {
+  height: 21vh;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius:6px;
+}
+.hackerrank-image {
+  height: 22vh;
+  display: block;
+  margin: 9px auto;
+  border:1px solid black;
 }
 

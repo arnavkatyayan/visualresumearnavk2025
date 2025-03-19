@@ -1,8 +1,8 @@
 import React from "react";
 import MyPicture from './ArnavKatyayanPic.jpg'
-
+import { Button } from "react-bootstrap";
 function AboutPage(props) {
-    const skills = [
+        const skills = [
         {
             category: "Programming Languages",
             technologies: ["C++", "Java", "JavaScript", "Python", "Data Structures & Algorithms"]
@@ -33,8 +33,17 @@ function AboutPage(props) {
     return (
         <div className="about-page">
             <div className="picture-experience">
+                <div className="picture-resume-btn">
                 <img src={MyPicture} className="my-picture" />
+                   
+                    <Button onClick={() => window.open("/ArnavK2025Resume.pdf", "_blank")}>
+                        View Resume
+                    </Button>
+                    <a href="/ArnavK2025Resume.pdf" download>
+                        <Button className="download-resume">Download Resume</Button>
+                    </a>
 
+                   </div>
                 <div className={`my-experience ${props.darkMode ? "skills-each-dark-mode" : ""}`}>
 
                     <h2><u>Education</u></h2>
@@ -60,7 +69,7 @@ function AboutPage(props) {
                 </div>
 
             </div>
-
+           
             <div className="skills">
                 {skills.map((skill) => (
                     <div className={`skills-each ${props.darkMode ? "skills-each-dark-mode" : ""}`} key={skill.category} >

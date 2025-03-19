@@ -75,11 +75,17 @@ function App() {
           <Container className="justify-content-center">
             <Nav className='footer-version'>
               <div className="footer-content">
-                <span>📧 <a href="mailto:arnavkatyayan99@gmail.com">Email</a></span> |
-                <span>🔗 <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></span> |
-                <span>📞 +91 8851454409</span> |
-                <span>🐱 <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">GitHub</a></span> |
-                <span>⚡ <a href="https://leetcode.com/yourprofile" target="_blank" rel="noopener noreferrer">LeetCode</a></span> |
+                <h6 className='text-align-center'>
+                  Version: 1.0.0 |
+                  <a
+                    href="https://github.com/arnavkatyayan/visualresumearnavk2025"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className='visual-resume-css'
+                  >
+                    VisualResumeRepo
+                  </a>
+                </h6>
               </div>
               <p className='text-align-center'>© 2025 Arnav Katyayan. All rights reserved.</p>
             </Nav>

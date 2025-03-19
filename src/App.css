@@ -105,9 +105,7 @@ body {
   font-weight: 700;
   font-family: monospace;
 }
-.contact-page {
- top:10vw;
-}
+
 .form-contact-page {
      border: 1px solid black;
      width: 25vw;
@@ -442,4 +440,116 @@ body {
   margin: 9px auto;
   border:1px solid black;
 }
+.contact-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2vw;
+  position: relative;
+}
 
+.first-div {
+  height: 28vh;
+  width: 20vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  animation: contactPageAnimation 3.2s ease-in-out;
+}
+
+.first-div-inside-animation {
+
+  animation: firstDivAnimation 4s ease-in-out;
+}
+
+@keyframes firstDivAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contactPageAnimation {
+  0% {
+    opacity: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    opacity: 0.5;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  75% {
+    opacity: 0.8;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  100% {
+    opacity: 1;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}
+
+.contact-grid-representation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5vw;
+}
+
+.visual-resume-css {
+  margin-left: 8px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.visual-resume-css:hover {
+  text-decoration: underline;
+}
+
+.picture-resume-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.download-resume {
+  width: 13vw;
+}
+
+.contact-icon {
+  height: 3vh;
+}
+
+.icon-name {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-message {
+  font-size: 18px;
+  color: #555;
+  margin-top: 60px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.contact-message-darkMode {
+  color: #a5a0a0bf;
+
+}

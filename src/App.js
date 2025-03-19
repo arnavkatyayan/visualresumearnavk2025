@@ -83,7 +83,7 @@ function App() {
                     rel="noopener noreferrer"
                     className='visual-resume-css'
                   >
-                    VisualResumeRepo
+                    VisualResumeRepository
                   </a>
                 </h6>
               </div>

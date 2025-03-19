@@ -439,6 +439,7 @@ body {
   display: block;
   margin: 9px auto;
   border:1px solid black;
+  border-radius: 6px;
 }
 .contact-page {
   display: flex;
@@ -551,5 +552,8 @@ body {
 
 .contact-message-darkMode {
   color: #a5a0a0bf;
+}
 
+.darkModeColor {
+  color:dodgerblue;
 }

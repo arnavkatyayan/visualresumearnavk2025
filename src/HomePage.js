@@ -14,7 +14,7 @@ function HomePage() {
                             "I hope you will like my work" 
                         ],
                         autoStart: true,
-                        loop: true, // Enables looping effect
+                        loop: true,
                     }}
                 />
                

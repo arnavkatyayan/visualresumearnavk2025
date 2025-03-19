@@ -81,9 +81,9 @@ function App() {
                     href="https://github.com/arnavkatyayan/visualresumearnavk2025"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='visual-resume-css'
+                    className={!darkMode? 'visual-resume-css':'visual-resume-css darkModeColor'}
                   >
-                    VisualResumeRepository
+                    VisualResumeRepository (This Project)
                   </a>
                 </h6>
               </div>

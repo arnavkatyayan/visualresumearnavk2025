@@ -245,7 +245,7 @@ body {
   border: 1px solid black;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
   position:relative;
-  top:1vw;
+  top:4vw;
   padding: 5px;
 }
 .project-names {
@@ -318,6 +318,7 @@ body {
   position: relative;
   max-height: 153vh;
   height: 161vh;
+  top:2vw;
 }
 
 .vertical-line {
@@ -445,7 +446,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 2vw;
+  top: 7vw;
   position: relative;
 }
 

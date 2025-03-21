@@ -41,7 +41,7 @@ function App() {
     <div className={darkMode ? "dark-theme" : "light-theme"}>
       
       {/* Navbar */}
-      <Navbar bg={darkMode ? "dark" : "light"} expand="lg" className='nav-bg'>
+      {/* <Navbar bg={darkMode ? "dark" : "light"} expand="lg" className='nav-bg'>
         <Container>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto margin-right-nav">
@@ -60,7 +60,71 @@ function App() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
+      <Navbar 
+  bg={darkMode ? "dark" : "light"} 
+  expand="lg" 
+  style={{ 
+    width: "100%", 
+    position: "fixed", 
+    top: 0, 
+    left: 0, 
+    zIndex: 1000, 
+    padding: "10px 20px"
+  }}
+>
+  <Container>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse 
+      id="basic-navbar-nav" 
+      style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}
+    >
+      <Nav style={{ display: "flex", alignItems: "center", gap: "15px", flexWrap: "nowrap" }}>
+        <Nav.Link 
+          style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
+          onClick={() => handleNavigation("home")}
+        >
+          Home
+        </Nav.Link>
+        <Nav.Link 
+          style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
+          onClick={() => handleNavigation("about")}
+        >
+          About
+        </Nav.Link>
+        <div 
+          style={{ display: "flex", alignItems: "center", gap: "10px", cursor: "pointer", padding: "5px 10px", borderRadius: "5px", backgroundColor: darkMode ? "#333" : "#f0f0f0" }}
+        >
+          {darkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
+          <ReactSwitch onChange={toggleDarkMode} checked={darkMode} />
+        </div>
+        <h1 style={{ whiteSpace: "nowrap", fontSize: "28px",marginLeft:"10vw", fontWeight: "bold", color: darkMode ? "white" : "black" }}>
+          Arnav Katyayan
+        </h1>
+      </Nav>
+      <Nav style={{ display: "flex", alignItems: "center", gap: "15px", flexWrap: "nowrap" }}>
+        <Nav.Link 
+          style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
+          onClick={() => handleNavigation("DSA")}
+        >
+          Data Structures & Algo
+        </Nav.Link>
+        <Nav.Link 
+          style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
+          onClick={() => handleNavigation("project")}
+        >
+          Projects
+        </Nav.Link>
+        <Nav.Link 
+          style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
+          onClick={() => handleNavigation("contact")}
+        >
+          Contact
+        </Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
 
       {/* Conditional Rendering Based on Current Page */}
       {currentPage === "home" && <HomePage />}
@@ -83,7 +147,7 @@ function App() {
                     rel="noopener noreferrer"
                     className={!darkMode? 'visual-resume-css':'visual-resume-css darkModeColor'}
                   >
-                    VisualResumeRepository (This Project)
+                    VisualResumeRepository
                   </a>
                 </h6>
               </div>

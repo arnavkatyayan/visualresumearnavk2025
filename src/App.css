@@ -145,11 +145,11 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: -2vw;
+  top: -1vw;
   gap: 40px;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
-  height:150vh;
+  height:173vh;
 }
 
 /* Slide-in effect for experience section */
@@ -164,7 +164,7 @@ body {
 /* Experience section styling */
 .my-experience {
   width: 32vw;
-  height: 69vh;
+  height: 94vh;
   border: 1px solid black;
   padding: 13px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);

@@ -50,6 +50,11 @@ function AboutPage(props) {
                     <h4>🎓 Bachelor of Technology, Computer Science Engineering</h4>
                     <h5>Lovely Professional University (LPU) | 2017 - 2021 | Jalandhar, IN</h5>
                     <p><b>CGPA:</b> 7.43</p>
+                    <h2><u>Project</u></h2>
+                    <h4>🖥️ Pixel Perfect – Full Stack Development</h4>
+                    <h5>USEReady | [Nov-2021 - Present] | [Gurugram, IN]</h5>
+                    <p><b>Description:</b> Pixel Perfect is a project focused on delivering high-precision, visually accurate UI components and layouts for enterprise applications. It ensures seamless user experiences by implementing responsive design, cross-browser compatibility, and performance optimization techniques.</p>
+
                     <h2><u>Experience</u></h2>
                     <h4>📅 Software Engineer (November 2021 – March 2024)</h4>
                     <ul>

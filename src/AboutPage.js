@@ -36,11 +36,11 @@ function AboutPage(props) {
                 <div className="picture-resume-btn">
                 <img src={MyPicture} className="my-picture" />
                    
-                    <Button onClick={() => window.open("/ArnavK2025Resume.pdf", "_blank")}>
+                    <Button variant="info" onClick={() => window.open("/ArnavK2025Resume.pdf", "_blank")}>
                         View Resume
                     </Button>
                     <a href="/ArnavK2025Resume.pdf" download>
-                        <Button className="download-resume">Download Resume</Button>
+                        <Button variant="success" className="download-resume">Download Resume</Button>
                     </a>
 
                    </div>
@@ -51,7 +51,7 @@ function AboutPage(props) {
                     <h5>Lovely Professional University (LPU) | 2017 - 2021 | Jalandhar, IN</h5>
                     <p><b>CGPA:</b> 7.43</p>
                     <h2><u>Experience</u></h2>
-                    <h4>📅 Software Engineer (Nov 2021 – April 2024)</h4>
+                    <h4>📅 Software Engineer (November 2021 – March 2024)</h4>
                     <ul>
                         <li>Developed multiple SFTP transfer features to enhance data handling.</li>
                         <li>Improved UI components for better user experience and performance.</li>

@@ -26,8 +26,8 @@ function ProjectsPage(props) {
                 <ul className="project-features">
 
                     <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap</li>
-                    <li><b>Backend:</b>Python, Flask, Pandas</li>
-                    <li><b>Database:</b>PostgreSQL</li>
+                    <li><b>Backend:</b> Python, Flask, Pandas</li>
+                    <li><b>Database:</b> PostgreSQL</li>
                 </ul>
                 <p className="project-description">
                     GitHub: <a href="https://github.com/arnavkatyayan/FlexBoardApp" target="_blank" rel="noopener noreferrer">

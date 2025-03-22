@@ -247,6 +247,7 @@ body {
   position:relative;
   top:4vw;
   padding: 5px;
+  border-radius: 10px;
 }
 .project-names {
   text-align: center;

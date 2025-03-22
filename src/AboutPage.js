@@ -53,7 +53,7 @@ function AboutPage(props) {
                     <h2><u>Project</u></h2>
                     <h4>🖥️ Pixel Perfect – Full Stack Development</h4>
                     <h5>USEReady | [Nov-2021 - Present] | [Gurugram, IN]</h5>
-                    <p><b>Description:</b> Pixel Perfect is a project focused on delivering high-precision, visually accurate UI components and layouts for enterprise applications. It ensures seamless user experiences by implementing responsive design, cross-browser compatibility, and performance optimization techniques.</p>
+                    <p><b>Description:</b> Pixel Perfect by USEReady is a high-precision reporting solution that generates print-ready, well-formatted reports within Tableau dashboards. Designed for industries requiring accurate audit and compliance reports, it ensures data precision and design consistency.The project enables enterprises to create branded, regulatory-compliant reports, transforming analytics into actionable insights.</p>
 
                     <h2><u>Experience</u></h2>
                     <h4>📅 Software Engineer (November 2021 – March 2024)</h4>

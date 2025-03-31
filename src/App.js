@@ -83,12 +83,14 @@ function App() {
         <Nav.Link 
           style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
           onClick={() => handleNavigation("home")}
+          className="hover-underline"
         >
           Home
         </Nav.Link>
         <Nav.Link 
           style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
           onClick={() => handleNavigation("about")}
+          className="hover-underline"
         >
           About
         </Nav.Link>
@@ -103,21 +105,28 @@ function App() {
         </h1>
       </Nav>
       <Nav style={{ display: "flex", alignItems: "center", gap: "15px", flexWrap: "nowrap" }}>
-        <Nav.Link 
-          style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
-          onClick={() => handleNavigation("DSA")}
-        >
-          Data Structures & Algo
-        </Nav.Link>
+              <Nav.Link
+                style={{
+                  color: darkMode ? "white" : "black",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                }}
+                onClick={() => handleNavigation("DSA")}
+                className="hover-underline"
+              >
+                Data Structures and Algorithms
+              </Nav.Link>
         <Nav.Link 
           style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
           onClick={() => handleNavigation("project")}
+          className="hover-underline"
         >
           Projects
         </Nav.Link>
         <Nav.Link 
           style={{ color: darkMode ? "white" : "black", textDecoration: "none", fontWeight: "bold" }} 
           onClick={() => handleNavigation("contact")}
+          className="hover-underline"
         >
           Contact
         </Nav.Link>

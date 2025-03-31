@@ -559,3 +559,7 @@ body {
 .darkModeColor {
   color:dodgerblue;
 }
+
+.hover-underline:hover {
+  text-decoration: underline !important;
+}

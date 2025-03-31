@@ -19,7 +19,7 @@ function ProjectsPage(props) {
                     <li>✅ Task Management – Create, update, and delete tasks with due dates and priorities.</li>
                     <li>✅ Project Organization – Manage multiple projects with different task lists.</li>
                     <li>✅ User Authentication – Secure signup, login, and profile management.</li>
-                    <li>✅ Dark Mode Support – User-friendly interface with light and dark themes.</li>
+                    <li>✅ Reward System - Earn coins as you complete tasks and unlock achievements!</li>
                     <li>✅ Recurring Tasks – Automate task repetition for recurring activities.</li>
                 </ol>
                 <p className="project-description">🛠️ Tech stack:</p>

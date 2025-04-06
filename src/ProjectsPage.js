@@ -18,7 +18,7 @@ function ProjectsPage(props) {
                 <ol className="project-features">
                     <li>✅ Task Management – Create, update, and delete tasks with due dates and priorities.</li>
                     <li>✅ Project Organization – Manage multiple projects with different task lists.</li>
-                    <li>✅ User Authentication – Secure signup, login, and profile management.</li>
+                    <li>✅ User Authentication – Secure signup, login, and profile management with change and forget password functionalities.</li>
                     <li>✅ Reward System - Earn coins as you complete tasks and unlock achievements!</li>
                     <li>✅ Recurring Tasks – Automate task repetition for recurring activities.</li>
                 </ol>

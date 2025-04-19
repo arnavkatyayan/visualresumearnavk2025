@@ -20,8 +20,8 @@ function AboutPage(props) {
             technologies: ["MySQL", "PostgreSQL"]
         },
         {
-            category: "DevOps / Atlassian Tools",
-            technologies: ["Git", "Jira", "Bitbucket"]
+            category: "DevOps / Atlassian Tools/",
+            technologies: ["Git", "Jira", "Bitbucket", "Vercel"]
         },
         {
             category: "Data Analysis / Visualization",

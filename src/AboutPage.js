@@ -24,8 +24,8 @@ function AboutPage(props) {
             technologies: ["Git", "Jira", "Bitbucket", "Vercel"]
         },
         {
-            category: "Data Analysis / Visualization",
-            technologies: ["NumPy", "Pandas", "Matplotlib", "Seaborn"]
+            category: "Data Analysis / Visualization / ML",
+            technologies: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "scikit-learn"]
         }
     ];
 

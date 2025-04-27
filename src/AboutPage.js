@@ -49,7 +49,6 @@ function AboutPage(props) {
                     <h2><u>Education</u></h2>
                     <h4>🎓 Bachelor of Technology, Computer Science Engineering</h4>
                     <h5>Lovely Professional University (LPU) | 2017 - 2021 | Jalandhar, IN</h5>
-                    <p><b>CGPA:</b> 7.43</p>
                     <h2><u>Project</u></h2>
                     <h4>🖥️ Pixel Perfect – Full Stack Development</h4>
                     <h5>USEReady | [Nov-2021 - Present] | [Gurugram, IN]</h5>

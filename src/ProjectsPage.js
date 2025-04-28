@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ExpensifyLogo from './ExpenseTrackerProjectLogo.jpg';
 import FlexBoardLogo from './FlexBoardProjectLogo.png';
+import VisualResumeLogo from './visual-resume-logo.png';
 function ProjectsPage(props) {
 
 
@@ -26,8 +27,10 @@ function ProjectsPage(props) {
                 <ul className="project-features">
 
                     <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap</li>
-                    <li><b>Backend:</b> Python, Flask, Pandas</li>
+                    <li><b>Backend:</b> Python, Flask</li>
                     <li><b>Database:</b> PostgreSQL</li>
+                    <li><b>Data Science and Machine learning:</b> Numpy, Pandas, scikit-learn</li>
+                    <li><b>Devops/Libraries:</b> Git, Github, openpyxl, psycopg2, sweetalert</li>
                 </ul>
                 <p className="project-description">
                     GitHub: <a href="https://github.com/arnavkatyayan/FlexBoardApp" target="_blank" rel="noopener noreferrer">
@@ -55,8 +58,8 @@ function ProjectsPage(props) {
 
                     <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap</li>
                     <li><b>Backend:</b> Java, Spring Boot, Hibernate</li>
-                    <li><b>Database:</b> PostgreSQL</li>  
-
+                    <li><b>Database:</b> PostgreSQL</li>
+                    <li><b>Devops/Libraries:</b> Git, Github, jasypt, Apache POI, sweetalert</li>
                 </ul>
                 <p className="project-description github">
                     GitHub: <a href="https://github.com/arnavkatyayan/ExpenseTrackerApp" target="_blank" rel="noopener noreferrer">
@@ -64,6 +67,36 @@ function ProjectsPage(props) {
                     </a>
                 </p>
             </div>
+            <div className={`projects fade-up ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
+                <div className="logo-name">
+                    <img src={VisualResumeLogo} className="flexboard-logo" />
+                    <h4 className="project-names">Visual Resume</h4>
+                </div>
+                <h6 className="project-names">(A dynamic visual representation of my skills, experience, and projects.)</h6>
+                <p className="project-description">
+                    Visual Resume is a modern, fully responsive personal portfolio designed to showcase my professional journey. Built using React and hosted on Vercel, it allows recruiters and connections to quickly view my background, skills, and project highlights at a glance.
+                </p>
+                <p className="project-description">🚀 Key Features:</p>
+                <ol className="project-features">
+                    <li>✅ Clean and professional UI with light and dark mode support.</li>
+                    <li>✅ Section-wise organized resume including Home, About, Projects, DSA Journey, and Contact Me.</li>
+                    <li>✅ Resume Download/view functionality and quick external profile links integration (GitHub, LinkedIn).</li>
+                    <li>✅ Deployed the app using Vercel for quick, global access.</li>
+                    <li>✅ Smooth animations and transitions to enhance user experience.</li>
+                </ol>
+                <p className="project-description">🛠️ Tech Stack:</p>
+                <ul className="project-features">
+                    <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap</li>
+                    <li><b>Hosting/Deployment:</b> Vercel</li>
+                    <li><b>Version Control:</b> Git, GitHub</li>
+                </ul>
+                <p className="project-description">
+                    GitHub: <a href="https://github.com/arnavkatyayan/visualresumearnavk2025" target="_blank" rel="noopener noreferrer">
+                        Visual Resume Repository
+                    </a>
+                </p>
+            </div>
+
         </div>
     )
 } export default ProjectsPage;

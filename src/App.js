@@ -11,6 +11,8 @@ import AboutPage from './AboutPage';
 import ProjectsPage from './ProjectsPage';
 import DsAlgoPage from './DsAlgoPage';
 import swal from 'sweetalert';
+import VisualResumeLogo from './visual-resume-logo.png';
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [currentPage, setCurrentPage] = useState("home"); // Tracks current active page
@@ -148,16 +150,17 @@ function App() {
           <Container className="justify-content-center">
             <Nav className='footer-version'>
               <div className="footer-content">
+                <img src={VisualResumeLogo} className='visual-resume-logo'/>
                 <h6 className='text-align-center'>
-                  Version: 1.0.0 |
-                  <a
+                  Version: 1.0.1 
+                  {/* <a
                     href="https://github.com/arnavkatyayan/visualresumearnavk2025"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={!darkMode? 'visual-resume-css':'visual-resume-css darkModeColor'}
                   >
                     VisualResumeRepository
-                  </a>
+                  </a> */}
                 </h6>
               </div>
               <p className='text-align-center'>© 2025 Arnav Katyayan. All rights reserved.</p>

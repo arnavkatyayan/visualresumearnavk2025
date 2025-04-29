@@ -149,7 +149,7 @@ body {
   gap: 40px;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
-  height:176vh;
+  height:183vh;
 }
 
 /* Slide-in effect for experience section */
@@ -319,13 +319,13 @@ body {
   align-items: center;
   gap: 80px; 
   position: relative;
-  max-height: 153vh;
-  height: 161vh;
+  max-height: 170vh;
+  height: 170vh;
   top:2vw;
 }
 
 .vertical-line {
-  height: 144vh;
+  height: 170vh;
   width: 4px;
   background-color: black;
   animation: fadeIn 1.5s ease-out forwards;

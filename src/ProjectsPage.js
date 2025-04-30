@@ -30,7 +30,8 @@ function ProjectsPage(props) {
                     <li><b>Backend:</b> Python, Flask</li>
                     <li><b>Database:</b> PostgreSQL</li>
                     <li><b>Data Science and Machine learning:</b> Numpy, Pandas, scikit-learn</li>
-                    <li><b>Devops/Libraries:</b> Git, Github, openpyxl, psycopg2, sweetalert</li>
+                    <li><b>Version Control:</b> Git, GitHub</li>
+                    <li><b>Libraries:</b> openpyxl, psycopg2, sweetalert, react-player</li>
                 </ul>
                 <p className="project-description">
                     GitHub: <a href="https://github.com/arnavkatyayan/FlexBoardApp" target="_blank" rel="noopener noreferrer">
@@ -59,7 +60,8 @@ function ProjectsPage(props) {
                     <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap</li>
                     <li><b>Backend:</b> Java, Spring Boot, Hibernate</li>
                     <li><b>Database:</b> PostgreSQL</li>
-                    <li><b>Devops/Libraries:</b> Git, Github, jasypt, Apache POI, sweetalert</li>
+                    <li><b>Version Control:</b> Git, GitHub</li>
+                    <li><b>Libraries:</b> jasypt, Apache POI, sweetalert</li>
                 </ul>
                 <p className="project-description github">
                     GitHub: <a href="https://github.com/arnavkatyayan/ExpenseTrackerApp" target="_blank" rel="noopener noreferrer">
@@ -89,6 +91,7 @@ function ProjectsPage(props) {
                     <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap</li>
                     <li><b>Hosting/Deployment:</b> Vercel</li>
                     <li><b>Version Control:</b> Git, GitHub</li>
+                    <li><b>Libraries:</b> sweetalert, typewriter-effect, react-switch</li>
                 </ul>
                 <p className="project-description">
                     GitHub: <a href="https://github.com/arnavkatyayan/visualresumearnavk2025" target="_blank" rel="noopener noreferrer">

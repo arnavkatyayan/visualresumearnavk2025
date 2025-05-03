@@ -31,7 +31,7 @@ function ProjectsPage(props) {
                     <li><b>Database:</b> PostgreSQL</li>
                     <li><b>Data Science and Machine learning:</b> Numpy, Pandas, scikit-learn</li>
                     <li><b>Version Control:</b> Git, GitHub</li>
-                    <li><b>Libraries:</b> openpyxl, psycopg2, sweetalert, react-player</li>
+                    <li><b>Libraries:</b> openpyxl, psycopg2, axios, sweetalert, react-player</li>
                 </ul>
                 <p className="project-description">
                     GitHub: <a href="https://github.com/arnavkatyayan/FlexBoardApp" target="_blank" rel="noopener noreferrer">
@@ -61,7 +61,7 @@ function ProjectsPage(props) {
                     <li><b>Backend:</b> Java, Spring Boot, Hibernate</li>
                     <li><b>Database:</b> PostgreSQL</li>
                     <li><b>Version Control:</b> Git, GitHub</li>
-                    <li><b>Libraries:</b> jasypt, Apache POI, sweetalert</li>
+                    <li><b>Libraries:</b> jasypt, Apache POI, axios, sweetalert</li>
                 </ul>
                 <p className="project-description github">
                     GitHub: <a href="https://github.com/arnavkatyayan/ExpenseTrackerApp" target="_blank" rel="noopener noreferrer">

@@ -20,8 +20,8 @@ function AboutPage(props) {
             technologies: ["MySQL", "PostgreSQL"]
         },
         {
-            category: "DevOps / Atlassian Tools",
-            technologies: ["Git", "Jira", "Bitbucket", "Vercel"]
+            category: "DevOps / Hosting",
+            technologies: ["Git", "GitHub", "Jira", "Bitbucket", "Vercel", "Render"]
         },
         {
             category: "Data Analysis / Visualization / ML",
@@ -52,10 +52,12 @@ function AboutPage(props) {
                     <h2><u>Project</u></h2>
                     <h4>🖥️ Pixel Perfect – Full Stack Development</h4>
                     <h5>USEReady | [Nov-2021 - Present] | [Gurugram, IN]</h5>
+                    <h5><b>Key Clients:</b> FIS, BPI, Morgan Stanley, CITI, DCSS</h5>
                     <p><b>Description:</b> Pixel Perfect by USEReady is a high-precision reporting solution that generates print-ready, well-formatted reports within Tableau dashboards. Designed for industries requiring accurate audit and compliance reports, it ensures data precision and design consistency.The project enables enterprises to create branded, regulatory-compliant reports, transforming analytics into actionable insights.</p>
 
                     <h2><u>Experience</u></h2>
                     <h4>📅 Software Engineer (November 2021 – March 2024)</h4>
+                  
                     <ul>
                         <li>Developed multiple SFTP transfer features to enhance data handling.</li>
                         <li>Improved UI components for better user experience and performance.</li>
@@ -65,7 +67,7 @@ function AboutPage(props) {
                     <h4>📅 Senior Software Engineer (April 2024 – Present)</h4>
                     <ul>
                         <li>Led the product migration project for FIS, ensuring seamless data transition, minimal downtime, and optimized system performance.</li>
-                        <li>Developed an MVP for BPI, taking end-to-end ownership of the architecture, design, and implementation while collaborating closely with stakeholders to refine requirements.</li>
+                        <li>Developed an MVP for BPI and DCSS, taking end-to-end ownership of the architecture, design, and implementation while collaborating closely with stakeholders to refine requirements.</li>
                         <li>Mentored new team members by providing technical guidance, conducting knowledge-sharing sessions, and fostering a collaborative and growth-oriented environment.</li>
 
                     </ul>

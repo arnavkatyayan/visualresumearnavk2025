@@ -10,8 +10,7 @@ function HomePage() {
                         strings: [
                             "Hello! My name is Arnav Katyayan",
                             "Welcome To my Visual-Resume",
-                            "I am Passionate About Software Development",
-                            "I hope you will like my work" 
+                            "Please navigate by clicking above actions and get to know more"
                         ],
                         autoStart: true,
                         loop: true,

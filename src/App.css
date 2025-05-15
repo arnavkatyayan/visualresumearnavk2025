@@ -191,6 +191,7 @@ body {
   height: 25vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  overflow: auto;
 }
 
 .skills-each:hover {
@@ -346,17 +347,18 @@ body {
 
 .ds-box {
   height: 35vh;
-  width: 35vw;
+  width: 40vw;
   border: 1px solid black;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   opacity: 0;
   position: relative;
+  overflow-y: auto;
 }
 
 .left-box {
   animation: slideLeft 1.5s ease-out forwards;
-  margin-right: 37vw;
+  margin-right: 41vw;
   margin-top:3vw;
 }
 
@@ -373,7 +375,7 @@ body {
 
 .right-box {
   animation: slideRight 1.5s ease-out forwards;
-  margin-left: 37vw;
+  margin-left: 41vw;
   margin-top:3vw;
 }
 

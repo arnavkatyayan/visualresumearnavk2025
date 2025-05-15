@@ -1,5 +1,5 @@
 import React from "react";
- import LeetcodeBadges from './LeetcodeBadgesUpdate.png';
+ import LeetcodeBadges from './LeetcodeBadges.png';
 import LeetcodeSubmissions from './LeetcodeSubmissions.png';
 import LeetcodeQuestions from './LeetcodeQuestions.png';
 import HackerankBadges from './HackerrankBadges.png';

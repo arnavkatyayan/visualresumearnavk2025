@@ -152,7 +152,7 @@ function App() {
               <div className="footer-content">
                 <img src={VisualResumeLogo} className='visual-resume-logo'/>
                 <h6 className='text-align-center'>
-                  Version: 1.0.3 
+                  Version: 1.0.4
                   {/* <a
                     href="https://github.com/arnavkatyayan/visualresumearnavk2025"
                     target="_blank"

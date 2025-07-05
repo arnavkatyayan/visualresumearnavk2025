@@ -12,6 +12,7 @@ function ProjectsPage(props) {
                 <div className="logo-name">
                     <img src={FlexBoardLogo} className="flexboard-logo" />
                     <h4 className="project-names">FlexBoard</h4>
+                    <h5 className="project-timeline">(2024-present)</h5>
                 </div>
                 <h6 className="project-names">(Task & Project Management System)</h6>
                 <p className="project-description">FlexBoard is a full-stack Task & Project Management System designed to help individuals and teams stay organized. Built using React, Flask, and PostgreSQL, it provides a seamless and efficient way to manage tasks, track project progress, and collaborate effectively.</p>
@@ -43,6 +44,7 @@ function ProjectsPage(props) {
                 <div className="logo-name">
                     <img src={ExpensifyLogo} className="flexboard-logo expensify-logo" />
                     <h4 className="project-names">Expensify</h4>
+                    <h5 className="project-timeline">(2024)</h5>
                 </div>
                 <h6 className="project-names">(Smart Financial Management)</h6>
                 <p className="project-description">The Expense Tracker is a full-stack web application that helps users efficiently manage their daily expenses and track their financial health. Built using React, Spring Boot, and PostgreSQL, it offers a user-friendly interface with insightful analytics.</p>
@@ -73,6 +75,7 @@ function ProjectsPage(props) {
                 <div className="logo-name">
                     <img src={VisualResumeLogo} className="flexboard-logo" />
                     <h4 className="project-names">Visual Resume</h4>
+                    <h5 className="project-timeline">(2025)</h5>
                 </div>
                 <h6 className="project-names">(A dynamic visual representation of my skills, experience, and projects.)</h6>
                 <p className="project-description">

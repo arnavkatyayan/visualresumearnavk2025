@@ -254,7 +254,6 @@ body {
 }
 .project-names {
   text-align: center;
-  text-decoration: underline;
 }
 .project-description {
   padding: 15px;
@@ -578,4 +577,8 @@ body {
   justify-content: center;
   align-items: center;
   gap:10px;
+}
+.project-timeline {
+  position: relative;
+  top:1px;
 }

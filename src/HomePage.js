@@ -8,12 +8,17 @@ function HomePage() {
                 <Typewriter
                     options={{
                         strings: [
-                            "Hello! My name is Arnav Katyayan",
-                            "Welcome To my Visual-Resume",
-                            "Please navigate by clicking above actions and get to know more"
+                            "Hello! My name is Arnav Katyayan.",
+                            "Welcome to my Visual Resume.",
+                            "I'm a passionate Full-Stack Developer and DSA enthusiast.",
+                            "Please navigate using the options above to explore my journey.",
+                            "Let's build something amazing together!"
                         ],
                         autoStart: true,
                         loop: true,
+                        pauseFor: 500,
+                        delay: 65,
+                        deleteSpeed: 5,   
                     }}
                 />
                

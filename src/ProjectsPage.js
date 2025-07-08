@@ -3,6 +3,7 @@ import { useState } from "react";
 import ExpensifyLogo from './ExpenseTrackerProjectLogo.jpg';
 import FlexBoardLogo from './FlexBoardProjectLogo.png';
 import VisualResumeLogo from './visual-resume-logo.png';
+import DailyScribeLogo from './LogoDailyScribe.png';
 function ProjectsPage(props) {
 
 
@@ -40,7 +41,41 @@ function ProjectsPage(props) {
                     </a>
                 </p>
             </div>
+
             <div className={`projects fade-down ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
+                <div className="logo-name">
+                    <img src={DailyScribeLogo} className="flexboard-logo expensify-logo" />
+                    <h4 className="project-names">Daily Scribe</h4>
+                    <h5 className="project-timeline">(2025-present)</h5>
+                </div>
+                <h6 className="project-names">(Journaling Tool)</h6>
+                <p className="project-description">
+                    Daily Scribe is a full-stack journaling web application designed to help users reflect, track, and document their daily thoughts and moods with ease. Built with React, Spring Boot, and PostgreSQL, it provides a secure and intuitive environment for consistent personal journaling.
+                </p>
+                <p className="project-description">🚀 Key Features:</p>
+                <ol className="project-features">
+                    <li>✍️ Write Daily Journals – Save date-wise entries with title and body.</li>
+                    <li>📝 Effortless Journal Management – Easily view, edit, and delete past journal entries with a clean interface.</li>
+                    <li>🔐 Encryption – Option to encrypt journal PDFs with custom passwords.</li>
+                    <li>🔍 Sort & Search – Quickly locate entries by date, keyword, or title.</li>
+                    <li>📤 Export Journals – Generate encrypted PDFs with custom filenames.</li>
+                </ol>
+                <p className="project-description">🛠️ Tech stack:</p>
+                <ul className="project-features">
+                    <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap, React-Router</li>
+                    <li><b>Backend:</b> Java, Spring Boot, Hibernate</li>
+                    <li><b>Database:</b> PostgreSQL</li>
+                    <li><b>Version Control:</b> Git, GitHub</li>
+                    <li><b>Libraries:</b> SweetAlert2, axios, jasypt, Apache PDFBox/iText, typewriter-effect</li>
+                </ul>
+                <p className="project-description github">
+                    GitHub: <a href="https://github.com/arnavkatyayan/DailyScribe" target="_blank" rel="noopener noreferrer">
+                        Daily Scribe Repository
+                    </a>
+                </p>
+            </div>
+
+            <div className={`projects fade-up ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
                 <div className="logo-name">
                     <img src={ExpensifyLogo} className="flexboard-logo expensify-logo" />
                     <h4 className="project-names">Expensify</h4>
@@ -71,7 +106,7 @@ function ProjectsPage(props) {
                     </a>
                 </p>
             </div>
-            <div className={`projects fade-up ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
+            <div className={`projects fade-down ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
                 <div className="logo-name">
                     <img src={VisualResumeLogo} className="flexboard-logo" />
                     <h4 className="project-names">Visual Resume</h4>

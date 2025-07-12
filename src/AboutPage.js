@@ -9,7 +9,7 @@ function AboutPage(props) {
         },
         {
             category: "Frontend Development",
-            technologies: ["HTML", "CSS", "React", "Bootstrap", "Redux", "React Router"]
+            technologies: ["HTML", "CSS", "React", "Tailwind CSS", "Bootstrap", "Redux", "React Router"]
         },
         {
             category: "Backend Development",

@@ -13,7 +13,7 @@ function AboutPage(props) {
         },
         {
             category: "Backend Development",
-            technologies: ["Spring Boot", "Flask", "Hibernate", "RESTful APIs"]
+            technologies: ["Spring Boot", "Flask", "Hibernate", "RESTful APIs", "Postman"]
         },
         {
             category: "Database",

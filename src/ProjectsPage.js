@@ -44,9 +44,43 @@ function ProjectsPage(props) {
 
             <div className={`projects fade-down ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
                 <div className="logo-name">
+                    <img src={ExpensifyLogo} className="flexboard-logo expensify-logo" />
+                    <h4 className="project-names">Expensify</h4>
+                    <h5 className="project-timeline">(2025-present)</h5>
+                </div>
+                <h6 className="project-names">(Smart Financial Management)</h6>
+                <p className="project-description">The Expense Tracker is a full-stack web application that helps users efficiently manage their daily expenses and track their financial health. Built using React, Spring Boot, and PostgreSQL, it offers a user-friendly interface with insightful analytics.</p>
+                <p className="project-description">🚀 Key Features:</p>
+                <ol className="project-features">
+                    <li>💰 Add & Categorize Transactions – Record income and expenses with category and emoji tagging.</li>
+                    <li>📈 Visual Analytics – Line and bar graphs to visualize trends over time (monthly, weekly, by source).</li>
+                    <li>🔄 Filter, Sort & Search – View entries by date, category, or amount with dynamic filters.</li>
+                    <li>🔐 Secure Auth – Role-based access, password encryption (Jasypt), and forgot-password support.</li>
+                    <li>📩 Export & Download – Download income/expense data in Excel via pandas.</li>
+                    <li>📤 Local Storage & Email Integration – Save data locally or send snapshots via email.</li>
+                </ol>
+                <p className="project-description">🛠️ Tech stack:</p>
+                <ul className="project-features">
+
+                    <li><b>Frontend:</b> JavaScript, React, Vanilla CSS, Tailwind CSS, Bootstrap, React-Router</li>
+                    <li><b>Backend:</b> Java, Spring Boot, Hibernate</li>
+                    <li><b>Database:</b> PostgreSQL</li>
+                    <li><b>Data Science and Machine learning:</b> Flask, Numpy, Pandas, scikit-learn</li>
+                    <li><b>Visualization Libraries:</b> Chart.js, React-Chartjs-2</li>
+                    <li><b>Version Control:</b> Git, GitHub</li>
+                    <li><b>Other Libraries:</b> axios, SweetAlert2</li>
+                </ul>
+                <p className="project-description github">
+                    GitHub: <a href="https://github.com/arnavkatyayan/Expensify2025" target="_blank" rel="noopener noreferrer">
+                        Expensify Repository
+                    </a>
+                </p>
+            </div>
+            <div className={`projects fade-up ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
+                <div className="logo-name">
                     <img src={DailyScribeLogo} className="flexboard-logo expensify-logo" />
                     <h4 className="project-names">Daily Scribe</h4>
-                    <h5 className="project-timeline">(2025-present)</h5>
+                    <h5 className="project-timeline">(2025)</h5>
                 </div>
                 <h6 className="project-names">(Journaling Tool)</h6>
                 <p className="project-description">
@@ -71,38 +105,6 @@ function ProjectsPage(props) {
                 <p className="project-description github">
                     GitHub: <a href="https://github.com/arnavkatyayan/DailyScribe" target="_blank" rel="noopener noreferrer">
                         Daily Scribe Repository
-                    </a>
-                </p>
-            </div>
-
-            <div className={`projects fade-up ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
-                <div className="logo-name">
-                    <img src={ExpensifyLogo} className="flexboard-logo expensify-logo" />
-                    <h4 className="project-names">Expensify</h4>
-                    <h5 className="project-timeline">(2024)</h5>
-                </div>
-                <h6 className="project-names">(Smart Financial Management)</h6>
-                <p className="project-description">The Expense Tracker is a full-stack web application that helps users efficiently manage their daily expenses and track their financial health. Built using React, Spring Boot, and PostgreSQL, it offers a user-friendly interface with insightful analytics.</p>
-                <p className="project-description">🚀 Key Features:</p>
-                <ol className="project-features">
-                    <li>💰 Add & Categorize Expenses – Record transactions with category tags.</li>
-                    <li>📅 Recurring Transactions – Automate monthly bills and income tracking..</li>
-                    <li>🔐 User Authentication – Secure login and role-based access with password decryption and forget password features.</li>
-                    <li>🔄 Expense Filtering & Sorting – View expenses by category, date, or amount.</li>
-                    <li>📩 Seamless expense data transfer via email and local storage.</li>
-                </ol>
-                <p className="project-description">🛠️ Tech stack:</p>
-                <ul className="project-features">
-
-                    <li><b>Frontend:</b> JavaScript, React, CSS, Bootstrap</li>
-                    <li><b>Backend:</b> Java, Spring Boot, Hibernate</li>
-                    <li><b>Database:</b> PostgreSQL</li>
-                    <li><b>Version Control:</b> Git, GitHub</li>
-                    <li><b>Libraries:</b> jasypt, Apache POI, axios, sweetalert</li>
-                </ul>
-                <p className="project-description github">
-                    GitHub: <a href="https://github.com/arnavkatyayan/ExpenseTrackerApp" target="_blank" rel="noopener noreferrer">
-                        Expensify Repository
                     </a>
                 </p>
             </div>

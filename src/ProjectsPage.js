@@ -58,6 +58,8 @@ function ProjectsPage(props) {
                     <li>🔐 Secure Auth – Role-based access, password encryption (Jasypt), and forgot-password support.</li>
                     <li>📩 Export & Download – Download income/expense data in Excel via pandas.</li>
                     <li>📤 Local Storage & Email Integration – Save data locally or send snapshots via email.</li>
+                    <li>🔁 Recurring Payments – Automate monthly bills and subscriptions with reminders.</li>
+
                 </ol>
                 <p className="project-description">🛠️ Tech stack:</p>
                 <ul className="project-features">

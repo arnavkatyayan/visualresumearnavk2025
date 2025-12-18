@@ -9,7 +9,7 @@ function ProjectsPage(props) {
 
     return (
         <div className="projects-page">
-            <div className={`projects fade-up ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
+            {/* <div className={`projects fade-up ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
                 <div className="logo-name">
                     <img src={FlexBoardLogo} className="flexboard-logo" />
                     <h4 className="project-names">FlexBoard</h4>
@@ -40,7 +40,7 @@ function ProjectsPage(props) {
                         FlexBoardApp Repository
                     </a>
                 </p>
-            </div>
+            </div> */}
 
             <div className={`projects fade-down ${props.darkMode ? "skills-each-dark-mode" : ""}`} >
                 <div className="logo-name">

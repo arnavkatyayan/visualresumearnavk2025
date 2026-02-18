@@ -152,7 +152,7 @@ function App() {
               <div className="footer-content">
                 <img src={VisualResumeLogo} className='visual-resume-logo'/>
                 <h6 className='text-align-center'>
-                  Version: 1.0.9
+                  Version: 1.0.8
                   {/* <a
                     href="https://github.com/arnavkatyayan/visualresumearnavk2025"
                     target="_blank"
@@ -163,7 +163,7 @@ function App() {
                   </a> */}
                 </h6>
               </div>
-              <p className='text-align-center'>© 2026 Arnav Katyayan. All rights reserved.</p>
+              <p className='text-align-center'>© 2025 Arnav Katyayan. All rights reserved.</p>
             </Nav>
           </Container>
         </Navbar>

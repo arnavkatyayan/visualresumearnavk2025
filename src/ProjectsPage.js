@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import ExpensifyLogo from './ExpenseTrackerProjectLogo.jpg';
-import FlexBoardLogo from './FlexBoardProjectLogo.png';
+// import FlexBoardLogo from './FlexBoardProjectLogo.png';
 import VisualResumeLogo from './visual-resume-logo.png';
 import DailyScribeLogo from './LogoDailyScribe.png';
 

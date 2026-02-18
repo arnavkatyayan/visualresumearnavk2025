@@ -133,10 +133,10 @@ function App() {
                   alt="Visual Resume Logo"
                 />
                 <h6 className='text-align-center'>
-                  Version: 1.0.8
+                  Version: 1.0.9
                 </h6>
               </div>
-              <p className='text-align-center'>© 2025 Arnav Katyayan. All rights reserved.</p>
+              <p className='text-align-center'>© 2026 Arnav Katyayan. All rights reserved.</p>
             </Nav>
           </Container>
         </Navbar>

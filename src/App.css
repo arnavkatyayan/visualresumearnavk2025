@@ -582,3 +582,149 @@ body {
   position: relative;
   top:1px;
 }
+
+/* Responsive adjustments for mobile and tablets */
+@media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .home-page-css {
+    top: 0;
+    min-height: calc(100vh - 100px);
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .typewriter-effects {
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-page {
+    height: auto;
+    top: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .picture-experience {
+    flex-direction: column;
+    align-items: center;
+    transform: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+    gap: 30px;
+  }
+  .my-experience {
+    width: 90vw;
+    height: auto;
+    max-height: 50vh;
+  }
+  .skills {
+    grid-template-columns: 1fr;
+    transform: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .skills-each {
+    height: auto;
+    min-height: 15vh;
+  }
+  .my-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    opacity: 1 !important;
+    animation: none !important;
+  }
+  .picture-resume-btn {
+    align-items: center;
+  }
+  .download-resume {
+    width: auto;
+  }
+  
+  .projects-page {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto;
+  }
+  .projects {
+    width: 90vw;
+    height: auto;
+    top: 0;
+    min-height: 50vh;
+    transform: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .fade-up, .fade-down {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  .ds-algo-page {
+    height: auto;
+    max-height: none;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 30px;
+    top: 0;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .ds-box {
+    width: 90vw;
+    height: auto;
+    margin: 0 !important;
+    transform: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .left-box, .right-box {
+    margin: 0 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  .dsa-box-animation {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .leetcode-badges, .gfg-image, .hackerrank-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .leetcode-badges-questions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-page {
+    top: 0;
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .contact-grid-representation {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .first-div {
+    width: 90vw;
+    height: auto;
+    min-height: 25vh;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .first-div-inside-animation {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  
+  footer .fixed-bottom {
+    position: relative !important;
+  }
+}

@@ -38,54 +38,45 @@ function App() {
   return (
     <div className={darkMode ? "dark-theme" : "light-theme"}>
 
-      <Navbar 
-        bg={darkMode ? "dark" : "light"} 
-        expand="lg" 
-        style={{ 
-          width: "100%", 
-          position: "fixed", 
-          top: 0, 
-          left: 0, 
-          zIndex: 1000, 
+      <Navbar
+        bg={darkMode ? "dark" : "light"}
+        expand="lg"
+        style={{
+          width: "100%",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 1000,
           padding: "10px 20px"
         }}
       >
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse 
-            id="basic-navbar-nav" 
-            style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}
-          >
-            <Nav style={{ display: "flex", alignItems: "center", gap: "15px", flexWrap: "nowrap" }}>
-              <Nav.Link 
-                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }} 
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto d-flex align-items-center gap-3">
+              <Nav.Link
+                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }}
                 onClick={() => handleNavigation("home")}
                 className="hover-underline"
               >
                 Home
               </Nav.Link>
 
-              <Nav.Link 
-                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }} 
+              <Nav.Link
+                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }}
                 onClick={() => handleNavigation("about")}
                 className="hover-underline"
               >
                 About
               </Nav.Link>
 
-              <div 
-                style={{ display: "flex", alignItems: "center", gap: "10px", cursor: "pointer", padding: "5px 10px", borderRadius: "5px", backgroundColor: darkMode ? "#333" : "#f0f0f0" }}
-              >
+              <div className="d-flex align-items-center justify-content-center my-3 my-lg-0 ms-lg-3 gap-2 p-2 rounded" style={{ backgroundColor: darkMode ? "#333" : "#f0f0f0", cursor: "pointer" }}>
                 {darkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
-                <ReactSwitch onChange={toggleDarkMode} checked={darkMode} />
+                <ReactSwitch onChange={toggleDarkMode} checked={darkMode} height={20} width={40} />
               </div>
-
-              <h1 style={{ whiteSpace: "nowrap", fontSize: "28px", marginLeft: "10vw", fontWeight: "bold", color: darkMode ? "white" : "black" }}>
-                Arnav Katyayan
-              </h1>
             </Nav>
 
-            <Nav style={{ display: "flex", alignItems: "center", gap: "15px", flexWrap: "nowrap" }}>
+            <Nav className="ms-auto d-flex align-items-center gap-3">
               <Nav.Link
                 style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }}
                 onClick={() => handleNavigation("DSA")}
@@ -94,16 +85,16 @@ function App() {
                 Data Structures and Algorithms
               </Nav.Link>
 
-              <Nav.Link 
-                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }} 
+              <Nav.Link
+                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }}
                 onClick={() => handleNavigation("project")}
                 className="hover-underline"
               >
                 Projects
               </Nav.Link>
 
-              <Nav.Link 
-                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }} 
+              <Nav.Link
+                style={{ color: darkMode ? "white" : "black", fontWeight: "bold" }}
                 onClick={() => handleNavigation("contact")}
                 className="hover-underline"
               >
@@ -127,9 +118,9 @@ function App() {
           <Container className="justify-content-center">
             <Nav className='footer-version'>
               <div className="footer-content">
-                <img 
-                  src={VisualResumeLogo} 
-                  className='visual-resume-logo' 
+                <img
+                  src={VisualResumeLogo}
+                  className='visual-resume-logo'
                   alt="Visual Resume Logo"
                 />
                 <h6 className='text-align-center'>

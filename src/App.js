@@ -40,6 +40,7 @@ function App() {
 
       <Navbar
         bg={darkMode ? "dark" : "light"}
+        variant={darkMode ? "dark" : "light"}
         expand="lg"
         style={{
           width: "100%",

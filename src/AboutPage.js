@@ -34,17 +34,17 @@ function AboutPage(props) {
     <div className="about-page">
       <div className="picture-experience">
         <div className="picture-resume-btn">
-          <img 
-            src={MyPicture} 
-            className="my-picture" 
+          <img
+            src={MyPicture}
+            className="my-picture"
             alt="Arnav Katyayan profile"
           />
 
-          <Button variant="info" onClick={() => window.open("/ArnavK2025Resume.pdf", "_blank")}>
+          <Button variant="info" onClick={() => window.open("/ArnavK2026Resume.pdf", "_blank")}>
             View Resume
           </Button>
 
-          <a href="/ArnavK2025Resume.pdf" download>
+          <a href="/ArnavK2026Resume.pdf" download>
             <Button variant="success" className="download-resume">
               Download Resume
             </Button>
@@ -97,8 +97,8 @@ function AboutPage(props) {
 
       <div className="skills">
         {skills.map((skill) => (
-          <div 
-            className={`skills-each ${props.darkMode ? "skills-each-dark-mode" : ""}`} 
+          <div
+            className={`skills-each ${props.darkMode ? "skills-each-dark-mode" : ""}`}
             key={skill.category}
           >
             <h5><u>{skill.category}</u></h5>
